@@ -6,8 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodies and Photos</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .food {
+            gap: 1rem;
+            margin: 1.4rem;
+            background-color: rgba(71, 71, 66,0.4);
+        }
+
+        .food:nth-child(2n){
+            background-color: rgba(71, 71, 66,0.2);
+        }
+
+        .food:nth-child(2n) > .food_img_container {
+            order: -1;
+        }
+
+        .food_header {
+            padding: 1.5rem;
+        }
+    </style>
 </head>
-<body>
-    Welcome to Foodies and Photos
+<body class="[  ] [ flex flex-col ] [ text-lg ]">
+
+    
+    <!-- nav -->
+    <nav class="[  ] [ flex justify-between ] [ sm:px-[3rem] lg:px-[15rem] ]">
+        <span class="nav_logo">
+            logo
+        </span>
+
+        <ul class="[ nav_links ] [ flex justify-between gap-4 ]">
+            <li class="nav_link"><a href="">Home</a></li>
+            <li class="nav_link"><a href="">About</a></li>
+            <li class="nav_link"><a href="">Events</a></li>
+        </ul>
+
+        <span class="nav_action">
+            <button>Contact Me</button>
+        </span>
+    </nav> 
+
+    <!-- banner -->
+
+    <section class="banner [ flex ]  [ sm:px-[3rem] lg:px-[15rem]  bg-green-200 p-5 mt-5 ]">
+
+        <div class="banner_body [  ] [ p-10 m-5   ]">
+            <h2 class="banner_title">Why I like Photos and Foods</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt molestiae voluptatibus iusto, impedit possimus eaque voluptatum a sit.</p>
+
+            <button class="banner_action [ bg-pink-300 px-8 py-3  ]">Lets Talk</button>
+        </div>
+
+        <div class="banner_img_content">
+            <img src="/assets/images/2013040814225583/312/Chocolate cupcake (character).jpg" alt="" class="banner_img">
+        </div>
+    </section>
+
+    <!-- ad space foods-->
+
+    <section class="foods [  ] [ sm:px-[3rem] lg:px-[15rem] ]">
+
+        <div class="food  [ flex ]">
+            <div class="food_header [ flex flex-col justify-center gap-10 ]">
+                <h3 class="food_title">Shrimps + Blue Wine</h3>
+                <p class="food_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facere culpa praesentium illo repellendus voluptates architecto at, expedita asperiores excepturi repellat consequatur quisquam quia saepe neque. Cupiditate soluta neque vel voluptatum culpa deleniti ducimus, omnis tempore corrupti, consequatur in modi?</p>
+            </div>
+
+            <div class="food_img_container">
+                <img src="https://honestcooking.com/wp-content/uploads/2017/11/Easy-Holiday-Appetizer-Prosciutto-Wrapped-Shrimp-Umami-Girl-7.jpg" alt="" class="food_img">
+            </div>
+        </div>
+
+        <div class="food  [ flex ]">
+            <div class="food_header [ flex flex-col justify-center gap-10 ]">
+                <h3 class="food_title">Taco + Mango</h3>
+                <p class="food_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facere culpa praesentium illo repellendus voluptates architecto at, expedita asperiores excepturi repellat consequatur quisquam quia saepe neque. Cupiditate soluta neque vel voluptatum culpa deleniti ducimus, omnis tempore corrupti, consequatur in modi?</p>
+            </div>
+
+            <div class="food_img_container">
+                <img src="https://honestcooking.com/wp-content/uploads/2017/11/Easy-Holiday-Appetizer-Prosciutto-Wrapped-Shrimp-Umami-Girl-7.jpg" alt="" class="food_img">
+            </div>
+        </div>
+
+        <div class="food  [ flex ]">
+            <div class="food_header [ flex flex-col justify-center gap-10 ]">
+                <h3 class="food_title">Hotdog + Coconut</h3>
+                <p class="food_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facere culpa praesentium illo repellendus voluptates architecto at, expedita asperiores excepturi repellat consequatur quisquam quia saepe neque. Cupiditate soluta neque vel voluptatum culpa deleniti ducimus, omnis tempore corrupti, consequatur in modi?</p>
+            </div>
+
+            <div class="food_img_container">
+                <img src="https://honestcooking.com/wp-content/uploads/2017/11/Easy-Holiday-Appetizer-Prosciutto-Wrapped-Shrimp-Umami-Girl-7.jpg" alt="" class="food_img">
+            </div>
+        </div>
+
+
+        <div class="food  [ flex ]">
+            <div class="food_header [ flex flex-col justify-center gap-10 ]">
+                <h3 class="food_title">Shrimps + Blue Wine</h3>
+                <p class="food_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facere culpa praesentium illo repellendus voluptates architecto at, expedita asperiores excepturi repellat consequatur quisquam quia saepe neque. Cupiditate soluta neque vel voluptatum culpa deleniti ducimus, omnis tempore corrupti, consequatur in modi?</p>
+            </div>
+
+            <div class="food_img_container">
+                <img src="https://honestcooking.com/wp-content/uploads/2017/11/Easy-Holiday-Appetizer-Prosciutto-Wrapped-Shrimp-Umami-Girl-7.jpg" alt="" class="food_img">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+
 </body>
 </html>
