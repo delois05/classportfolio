@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta Email="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodies and Photos</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .food {
             gap: 1rem;
             margin: 1.4rem;
-            background-color: rgba(71, 71, 66,0.4);
+            background-color: rgba(71, 71, 66, 0.4);
         }
 
-        .food:nth-child(2n){
-            background-color: rgba(71, 71, 66,0.2);
+        .food:nth-child(2n) {
+            background-color: rgba(71, 71, 66, 0.2);
         }
 
-        .food:nth-child(2n) > .food_img_container {
+        .food:nth-child(2n)>.food_img_container {
             order: -1;
         }
 
@@ -26,9 +27,10 @@
         }
     </style>
 </head>
+
 <body class="[  ] [ flex flex-col ] [ text-lg ]">
 
-    
+
     <!-- nav -->
     <nav class="[  ] [ flex justify-between ] [ sm:px-[3rem] lg:px-[15rem] ]">
         <span class="nav_logo">
@@ -44,17 +46,24 @@
         <span class="nav_action">
             <button>Contact Me</button>
         </span>
-    </nav> 
+    </nav>
 
     <!-- banner -->
 
     <section class="banner [ flex ]  [ sm:px-[3rem] lg:px-[15rem]  bg-green-200 p-5 mt-5 ]">
 
-        <div class="banner_body [  ] [ p-10 m-5   ]">
-            <h2 class="banner_title">Why I like Photos and Foods</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt molestiae voluptatibus iusto, impedit possimus eaque voluptatum a sit.</p>
+        <div class="banner_body [ flex flex-col justify-between  ] [ p-10 m-5 w-[90%]  border-4 border-black ]">
+            <h2 class="banner_title text-lg ">Why I like Photos and Foods</h2>
+            <p>
+                ..I grew up in Alabama where nature brought me the passion of photography and videograpahy,
+                I had ponnies and an airline named after me
+            </p>
+            <p>
+                ..You would find me planning shoots on barbecues and sea food. Shrimps are my go to.
+            </p>
+            <p>That is a bit <span class="underline">about me</span></p>
 
-            <button class="banner_action [ bg-pink-300 px-8 py-3  ]">Lets Talk</button>
+            <a class="banner_action [ mt-5 px-8 py-3 bg-pink-300 ]"  href="#bookme">Book Me</a>
         </div>
 
         <div class="banner_img_content">
@@ -64,38 +73,96 @@
 
     <!-- ad space foods-->
 
+    <section class="hobbies [ flex flex-col ] [ sm:px-[5rem] lg:px-[16rem] mt-[2rem] w-100 ]">
+
+        <h2 class="hobbies_heading w-[100%] bg-red-100 p-5 my-5">Hobbies</h2>
+
+
+        <div class="hobbies_list [  ] [  flex gap-5 justify-between ]">
+
+
+            <div class="hobby [ ] [ w-1/3 ]">
+                <div class="hobby_img_container [ w-100  ]">
+
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.JOLuSNGWQSPGRRL-mPjXGQHaGq&pid=Api&P=0&w=300&h=300"
+                        alt="">
+
+                </div>
+                <figcaption class="mb-5"></figcaption>
+                <a href="https://www.instagram.com/1x/" class=" hover:bg-blue-300 p-3 bg-green-200"
+                    target="_blank">Photography</a>
+            </div>
+
+
+            <div class="hobby [  ] [ w-1/3 mt-[120px] ]">
+                <div class="hobby_img_container [ w-100  ]">
+
+                    <img src="https://i1.wp.com/naturetravelbirding.com/wp-content/uploads/2018/08/machu-picchu.jpg?ssl=1"
+                        alt="">
+                </div>
+                <figcaption class="mb-5">machu-picchu peru</figcaption>
+                <a href="https://twitter.com/luxury__travel" class=" hover:bg-blue-300 p-3 bg-green-200"
+                    target="_blank">Travelling</a>
+            </div>
+
+            <div class="hobby [  ] [ w-1/3 mt-[200px] ]">
+                <div class="hobby_img_container [ w-100  ]">
+
+                    <img src="https://addictedtoallthingspretty.com/wp-content/uploads/2018/06/Image_1-3.jpeg" alt="">
+                </div>
+                <figcaption class="mb-5">Lady excercing at the gym</figcaption>
+                <a href="https://www.militiafitness.com/" class=" hover:bg-blue-300 p-3 bg-green-200"
+                    target="_blank">Workout</a>
+            </div>
+
+        </div>
+
+    </section>
+
     <section class="foods [  ] [ sm:px-[3rem] lg:px-[15rem] ]">
 
         <div class="food  [ flex ]">
             <div class="food_header [ flex flex-col justify-center gap-10 ]">
                 <h3 class="food_title">Shrimps + Blue Wine</h3>
-                <p class="food_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facere culpa praesentium illo repellendus voluptates architecto at, expedita asperiores excepturi repellat consequatur quisquam quia saepe neque. Cupiditate soluta neque vel voluptatum culpa deleniti ducimus, omnis tempore corrupti, consequatur in modi?</p>
+                <p class="food_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facere culpa
+                    praesentium illo repellendus voluptates architecto at, expedita asperiores excepturi repellat
+                    consequatur quisquam quia saepe neque. Cupiditate soluta neque vel voluptatum culpa deleniti
+                    ducimus, omnis tempore corrupti, consequatur in modi?</p>
             </div>
 
             <div class="food_img_container">
-                <img src="https://honestcooking.com/wp-content/uploads/2017/11/Easy-Holiday-Appetizer-Prosciutto-Wrapped-Shrimp-Umami-Girl-7.jpg" alt="" class="food_img">
+                <img src="https://honestcooking.com/wp-content/uploads/2017/11/Easy-Holiday-Appetizer-Prosciutto-Wrapped-Shrimp-Umami-Girl-7.jpg"
+                    alt="" class="food_img">
             </div>
         </div>
 
         <div class="food  [ flex ]">
             <div class="food_header [ flex flex-col justify-center gap-10 ]">
                 <h3 class="food_title">Taco + Mango</h3>
-                <p class="food_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facere culpa praesentium illo repellendus voluptates architecto at, expedita asperiores excepturi repellat consequatur quisquam quia saepe neque. Cupiditate soluta neque vel voluptatum culpa deleniti ducimus, omnis tempore corrupti, consequatur in modi?</p>
+                <p class="food_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facere culpa
+                    praesentium illo repellendus voluptates architecto at, expedita asperiores excepturi repellat
+                    consequatur quisquam quia saepe neque. Cupiditate soluta neque vel voluptatum culpa deleniti
+                    ducimus, omnis tempore corrupti, consequatur in modi?</p>
             </div>
 
             <div class="food_img_container">
-                <img src="https://honestcooking.com/wp-content/uploads/2017/11/Easy-Holiday-Appetizer-Prosciutto-Wrapped-Shrimp-Umami-Girl-7.jpg" alt="" class="food_img">
+                <img src="https://honestcooking.com/wp-content/uploads/2017/11/Easy-Holiday-Appetizer-Prosciutto-Wrapped-Shrimp-Umami-Girl-7.jpg"
+                    alt="" class="food_img">
             </div>
         </div>
 
         <div class="food  [ flex ]">
             <div class="food_header [ flex flex-col justify-center gap-10 ]">
                 <h3 class="food_title">Hotdog + Coconut</h3>
-                <p class="food_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facere culpa praesentium illo repellendus voluptates architecto at, expedita asperiores excepturi repellat consequatur quisquam quia saepe neque. Cupiditate soluta neque vel voluptatum culpa deleniti ducimus, omnis tempore corrupti, consequatur in modi?</p>
+                <p class="food_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facere culpa
+                    praesentium illo repellendus voluptates architecto at, expedita asperiores excepturi repellat
+                    consequatur quisquam quia saepe neque. Cupiditate soluta neque vel voluptatum culpa deleniti
+                    ducimus, omnis tempore corrupti, consequatur in modi?</p>
             </div>
 
             <div class="food_img_container">
-                <img src="https://honestcooking.com/wp-content/uploads/2017/11/Easy-Holiday-Appetizer-Prosciutto-Wrapped-Shrimp-Umami-Girl-7.jpg" alt="" class="food_img">
+                <img src="https://honestcooking.com/wp-content/uploads/2017/11/Easy-Holiday-Appetizer-Prosciutto-Wrapped-Shrimp-Umami-Girl-7.jpg"
+                    alt="" class="food_img">
             </div>
         </div>
 
@@ -103,17 +170,79 @@
         <div class="food  [ flex ]">
             <div class="food_header [ flex flex-col justify-center gap-10 ]">
                 <h3 class="food_title">Shrimps + Blue Wine</h3>
-                <p class="food_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facere culpa praesentium illo repellendus voluptates architecto at, expedita asperiores excepturi repellat consequatur quisquam quia saepe neque. Cupiditate soluta neque vel voluptatum culpa deleniti ducimus, omnis tempore corrupti, consequatur in modi?</p>
+                <p class="food_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facere culpa
+                    praesentium illo repellendus voluptates architecto at, expedita asperiores excepturi repellat
+                    consequatur quisquam quia saepe neque. Cupiditate soluta neque vel voluptatum culpa deleniti
+                    ducimus, omnis tempore corrupti, consequatur in modi?</p>
             </div>
 
             <div class="food_img_container">
-                <img src="https://honestcooking.com/wp-content/uploads/2017/11/Easy-Holiday-Appetizer-Prosciutto-Wrapped-Shrimp-Umami-Girl-7.jpg" alt="" class="food_img">
+                <img src="https://honestcooking.com/wp-content/uploads/2017/11/Easy-Holiday-Appetizer-Prosciutto-Wrapped-Shrimp-Umami-Girl-7.jpg"
+                    alt="" class="food_img">
             </div>
         </div>
 
     </section>
 
+    <section class="booking [ flex flex-col ] [ sm:px-[4.5rem] lg:px-[16.2rem] ]" id="bookme">
+        <h2 class=" [  ] [ bg-red-100  p-5 ]">Book Me</h2>
+
+        <form action="" class=" [  flex flex-col ] [ gap-3 mt-3 ]">
+
+            <div class="formgroup [ flex ]">
+                <label for="" class=" w-1/3">Name</label>
+                <input type="text" class=" w-2/3 border-4 border-black-100" placeholder="name">
+            </div>
+
+            <div class="formgroup [ flex ]">
+                <label for="" class=" w-1/3">Telephone</label>
+                <input type="text" class=" w-2/3 border-4 border-black-100" placeholder="Telephone">
+            </div>
+
+            <div class="formgroup [ flex ]">
+                <label for="" class=" w-1/3">Event Type</label>
+                <input type="text" class=" w-2/3 border-4 border-black-100" placeholder="Event Type">
+            </div>
+
+            <div class="formgroup [ flex ]">
+                <label for="" class=" w-1/3">Date of event</label>
+                <input type="text" class=" w-2/3 border-4 border-black-100" placeholder="Date of event">
+            </div>
+
+            <div class="formgroup [ flex ]">
+                <label for="" class=" w-1/3">Reference</label>
+                <input type="text" class=" w-2/3 border-4 border-black-100" placeholder="Reference">
+            </div>
+
+            <div class="formgroup [ flex ]">
+                <label for="" class=" w-1/3">Event Location</label>
+                <input type="text" class=" w-2/3 border-4 border-black-100" placeholder="Event Location">
+            </div>
+
+            <div class="formgroup [ flex ]">
+                <label for="" class=" w-1/3">Providing accomodation?</label>
+                <input type="text" class=" w-2/3 border-4 border-black-100" placeholder="Providing accomodation?">
+            </div>
+
+            <div class="formgroup [ flex ]">
+                <label for="" class=" w-1/3">Expected no. people</label>
+                <input type="text" class=" w-2/3 border-4 border-black-100" placeholder="Expected no. people">
+            </div>
+
+            <div class="formgroup [ flex ]">
+                <label for="" class=" w-1/3">How many photos</label>
+                <input type="text" class=" w-2/3 border-4 border-black-100" placeholder="How many photos">
+            </div>
+
+            <div class="formgroup [ flex ]">
+                <label for="" class=" w-1/3">Email</label>
+                <input type="text" class=" w-2/3 border-4 border-black-100" placeholder="Email">
+            </div>
+        </form>
+    </section>
+
     <!-- footer -->
 
 </body>
+
 </html>
