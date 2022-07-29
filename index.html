@@ -8,6 +8,10 @@
     <title>Foodies and Photos</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        nav {
+            position: sticky;
+            top: 0;
+        }
         .food {
             gap: 1rem;
             margin: 1.4rem;
@@ -32,15 +36,18 @@
 
 
     <!-- nav -->
-    <nav class="[  ] [ flex justify-between ] [ sm:px-[3rem] lg:px-[15rem] ]">
+    <nav class="[  ] [ flex justify-between ] [ sm:px-[3rem] lg:px-[15rem] bg-white py-5 drop-shadow-xl
+
+    ]">
         <span class="nav_logo">
             logo
         </span>
 
         <ul class="[ nav_links ] [ flex justify-between gap-4 ]">
-            <li class="nav_link"><a href="">Home</a></li>
-            <li class="nav_link"><a href="">About</a></li>
-            <li class="nav_link"><a href="">Events</a></li>
+            <li class="nav_link"><a href="/">Home</a></li>
+            <li class="nav_link"><a href="/">About</a></li>
+            <li class="nav_link"><a href="/">Events</a></li>
+            <li class="nav_link"><a href="/skills.html">Skills</a></li>
         </ul>
 
         <span class="nav_action">
@@ -50,7 +57,7 @@
 
     <!-- banner -->
 
-    <section class="banner [ flex ]  [ sm:px-[3rem] lg:px-[15rem]  bg-green-200 p-5 mt-5 ]">
+    <section class="banner [ flex ]  [ sm:px-[3rem] lg:px-[15rem]  bg-green-200 p-5 mt-5 pt-0 ]">
 
         <div class="banner_body [ flex flex-col justify-between  ] [ p-10 m-5 w-[90%]  border-4 border-black ]">
             <h2 class="banner_title text-lg ">Why I like Photos and Foods</h2>
@@ -63,7 +70,7 @@
             </p>
             <p>That is a bit <span class="underline">about me</span></p>
 
-            <a class="banner_action [ mt-5 px-8 py-3 bg-pink-300 ]"  href="#bookme">Book Me</a>
+            <a class="banner_action [ mt-5 px-8 py-3 bg-pink-300 ]" href="#bookme">Book Me</a>
         </div>
 
         <div class="banner_img_content">
@@ -231,7 +238,23 @@
 
             <div class="formgroup [ flex ]">
                 <label for="" class=" w-1/3">How many photos</label>
-                <input type="text" class=" w-2/3 border-4 border-black-100" placeholder="How many photos">
+                <div class="w-2/3 [ flex ]">
+                    <input type="number" name="numberOfPhotos" min="3" class=" w-1/3 border-4 border-black-100"
+                        placeholder="How many photos">
+                    <button class="btn bg-orange-300 px-4 mx-5 hover:bg-orange-500"
+                        onclick="computePhotosTotal(event, 100)">Calculat</button>
+
+                </div>
+            </div>
+
+            <div class=" [ flex  ] [  ]">
+                <span class="[  ] [ w-1/3 ]">Billing</span>
+                <div class=" [ flex flex-col ] [ w-2/3 ]">
+                    <label for="">Total Cost  <input type="text" readonly name="totalCost" value="$__"></label>
+                    <label for="">Discount:  <input type="text" readonly name="discount" value="N/a"></label>
+                    <label for="">Total Cost  <input type="text" readonly name="finalCost" value="$__"></label>
+
+                </div>
             </div>
 
             <div class="formgroup [ flex ]">
@@ -240,6 +263,8 @@
             </div>
         </form>
     </section>
+
+    <script src="script.js" defer></script>
 
     <!-- footer -->
 
