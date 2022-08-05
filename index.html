@@ -13,10 +13,17 @@
             top: 0;
         }
 
+        .food , .food * {
+            transition:all;
+            transition-duration: 250ms;
+        }
+
+      
         .food {
             gap: 1rem;
             margin: 1.4rem;
             background-color: rgba(71, 71, 66, 0.4);
+            overflow: hidden;
         }
 
         .food:nth-child(2n) {
@@ -30,6 +37,27 @@
         .food_header {
             padding: 1.5rem;
         }
+
+        .food:nth-child(odd) img {
+            transform: rotate(2deg) scale(1.05)
+        }
+        .food:nth-child(odd) .food_header {
+            transform: rotate(-1deg) 
+        }
+
+    
+        .food:nth-child(even) img {
+            transform: rotate(-1deg) scale(1.05)
+        }
+
+        .food:nth-child(even) .food_header {
+            transform: rotate(1deg) 
+        }
+
+        .food:hover img, .food_header {
+            transform: rotate(0deg);
+        }
+
     </style>
 </head>
 
@@ -37,7 +65,7 @@
 
 
     <!-- nav -->
-    <nav class="[  ] [ flex justify-between ] [ sm:px-[3rem] lg:px-[15rem] bg-white py-5 drop-shadow-xl
+    <nav class="[  ] [ flex justify-between ] [ sm:px-[3rem] lg:px-[15rem] bg-white py-5 shadow-2xl rounded-lg  overflow-none-xl
 
     ]">
         <span class="nav_logo">
@@ -137,11 +165,11 @@
 
     </section>
 
-    <section class="foods [  ] [ sm:px-[3rem] lg:px-[15rem] ]">
+    <section class="foods [ flex flex-col  ] [ sm:px-[3rem] lg:px-[15rem] gap-2 my-10 ]">
 
-        <div class="food  [ flex ]">
+        <div class="food  [ flex ] [ shadow-2xl rounded-lg  overflow-none]">
             <div class="food_header [ flex flex-col justify-center gap-10 ]">
-                <h3 class="food_title">Shrimps + Blue Wine</h3>
+                <h3 class="food_title">Clams</h3>
                 <p class="food_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facere culpa
                     praesentium illo repellendus voluptates architecto at, expedita asperiores excepturi repellat
                     consequatur quisquam quia saepe neque. Cupiditate soluta neque vel voluptatum culpa deleniti
@@ -149,14 +177,14 @@
             </div>
 
             <div class="food_img_container">
-                <img src="https://honestcooking.com/wp-content/uploads/2017/11/Easy-Holiday-Appetizer-Prosciutto-Wrapped-Shrimp-Umami-Girl-7.jpg"
+                <img src="assets/home images/1.jpg"
                     alt="" class="food_img">
             </div>
         </div>
 
-        <div class="food  [ flex ]">
+        <div class="food  [ flex ] [ shadow-2xl rounded-lg  overflow-none]">
             <div class="food_header [ flex flex-col justify-center gap-10 ]">
-                <h3 class="food_title">Taco + Mango</h3>
+                <h3 class="food_title">Ribs and Jerk Chicken</h3>
                 <p class="food_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facere culpa
                     praesentium illo repellendus voluptates architecto at, expedita asperiores excepturi repellat
                     consequatur quisquam quia saepe neque. Cupiditate soluta neque vel voluptatum culpa deleniti
@@ -164,14 +192,14 @@
             </div>
 
             <div class="food_img_container">
-                <img src="https://honestcooking.com/wp-content/uploads/2017/11/Easy-Holiday-Appetizer-Prosciutto-Wrapped-Shrimp-Umami-Girl-7.jpg"
+                <img src="assets/home images/2.jpg"
                     alt="" class="food_img">
             </div>
         </div>
 
-        <div class="food  [ flex ]">
+        <div class="food  [ flex ] [ shadow-2xl rounded-lg  overflow-none]">
             <div class="food_header [ flex flex-col justify-center gap-10 ]">
-                <h3 class="food_title">Hotdog + Coconut</h3>
+                <h3 class="food_title">Turkey neck bones and Couscous</h3>
                 <p class="food_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facere culpa
                     praesentium illo repellendus voluptates architecto at, expedita asperiores excepturi repellat
                     consequatur quisquam quia saepe neque. Cupiditate soluta neque vel voluptatum culpa deleniti
@@ -179,15 +207,14 @@
             </div>
 
             <div class="food_img_container">
-                <img src="https://honestcooking.com/wp-content/uploads/2017/11/Easy-Holiday-Appetizer-Prosciutto-Wrapped-Shrimp-Umami-Girl-7.jpg"
+                <img src="assets/home images/3.jpg"
                     alt="" class="food_img">
             </div>
         </div>
 
-
-        <div class="food  [ flex ]">
+        <div class="food  [ flex ] [ shadow-2xl rounded-lg  overflow-none]">
             <div class="food_header [ flex flex-col justify-center gap-10 ]">
-                <h3 class="food_title">Shrimps + Blue Wine</h3>
+                <h3 class="food_title">Seafood bowl</h3>
                 <p class="food_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facere culpa
                     praesentium illo repellendus voluptates architecto at, expedita asperiores excepturi repellat
                     consequatur quisquam quia saepe neque. Cupiditate soluta neque vel voluptatum culpa deleniti
@@ -195,10 +222,12 @@
             </div>
 
             <div class="food_img_container">
-                <img src="https://honestcooking.com/wp-content/uploads/2017/11/Easy-Holiday-Appetizer-Prosciutto-Wrapped-Shrimp-Umami-Girl-7.jpg"
+                <img src="assets/home images/4.jpg"
                     alt="" class="food_img">
             </div>
         </div>
+
+
 
     </section>
 
