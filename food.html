@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta Email="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodies and Photos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        nav {
+            position: sticky;
+            top: 0;
+        }
+
+        .food {
+            gap: 1rem;
+            margin: 1.4rem;
+            background-color: rgba(71, 71, 66, 0.4);
+        }
+
+        .food:nth-child(2n) {
+            background-color: rgba(71, 71, 66, 0.2);
+        }
+
+        .food:nth-child(2n)>.food_img_container {
+            order: -1;
+        }
+
+        .food_header {
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="[  ] [ flex flex-col ] [ text-lg ]">
+
+
+    <!-- nav -->
+    <nav class="[  ] [ flex justify-between ] [ sm:px-[3rem] lg:px-[15rem] bg-white py-5 drop-shadow-xl
+
+    ]">
+        <span class="nav_logo">
+            logo
+        </span>
+
+        <!-- 
+            1.	Home*
+2.	Skill*
+3.	Travel page : countries (greece, Italy, Thailand, korea) 
+4.	Photography:
+5.	Gallery (food): name, kind, ingredients
+
+         -->
+
+        <ul class="[ nav_links ] [ flex justify-between gap-4 ]">
+            <li class="nav_link"><a href="index.html">Home</a></li>
+            <li class="nav_link"><a href="skills.html">Skills</a></li>
+            <li class="nav_link"><a href="travel.html">Travel</a></li>
+            <li class="nav_link"><a href="food.html">Food Gallery</a></li>
+            <li class="nav_link"><a href="events.html">Events</a></li>
+        </ul>
+
+        <span class="nav_action">
+            <button>Contact Me</button>
+        </span>
+    </nav>
+
+    <!-- banner -->
+
+    <section class="events [ flex flex-col ]  [ sm:px-[3rem] lg:px-[25rem]  bg-green-200 p-5 mt-5 ]">
+
+        <h2>Food</h2>
+
+
+        <div class="food_items flex flex-col gap-[20px]">
+
+
+            <div class="food_item food-grid flex">
+                <div class="food-image-and-ingredients w-3/4 h-[500px] border-black-100 border border-solid"
+                    style="background-image: url(assets/food\ images/1.jpg);object-fit: cover; background-size: contain; background-repeat: no-repeat;">
+                </div>
+
+                <div class="title-and-reminder flex flex-col p-3">
+                    <h2 class="food_title bold underline ">
+                        Acorn Squash stuffed with Couscous
+                    </h2>
+                    <p class="mt-3 text-brown-500"> </p>
+                </div>
+
+            </div>
+
+
+            <div class="food_item food-grid flex">
+                <div class="food-image-and-ingredients w-3/4 h-[500px] border-black-100 border border-solid"
+                    style="background-image: url(assets/food\ images/2.jpg);object-fit: cover; background-size: contain; background-repeat: no-repeat;">
+                   
+                </div>
+
+                <div class="title-and-reminder flex flex-col p-3">
+                    <h2 class="food_title bold underline ">
+                        Gyro
+                    </h2>
+                    <p class="mt-3 text-brown-500"> </p>
+                </div>
+
+            </div>
+
+
+            <div class="food_item food-grid flex">
+                <div class="food-image-and-ingredients w-3/4 h-[500px] border-black-100 border border-solid"
+                    style="background-image: url(assets/food\ images/3.jpg);object-fit: cover; background-size: contain; background-repeat: no-repeat;">
+                   
+                </div>
+
+                <div class="title-and-reminder flex flex-col p-3">
+                    <h2 class="food_title bold underline ">
+                        Pineapple Seafood bowl
+                    </h2>
+                    <p class="mt-3 text-brown-500"> </p>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <script src="script.js" defer></script>
+
+    <!-- footer -->
+
+</body>
+
+</html>

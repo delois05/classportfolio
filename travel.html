@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta Email="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodies and Photos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        nav {
+            position: sticky;
+            top: 0;
+        }
+
+        .food {
+            gap: 1rem;
+            margin: 1.4rem;
+            background-color: rgba(71, 71, 66, 0.4);
+        }
+
+        .food:nth-child(2n) {
+            background-color: rgba(71, 71, 66, 0.2);
+        }
+
+        .food:nth-child(2n)>.food_img_container {
+            order: -1;
+        }
+
+        .food_header {
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="[  ] [ flex flex-col ] [ text-lg ]">
+
+
+    <!-- nav -->
+    <nav class="[  ] [ flex justify-between ] [ sm:px-[3rem] lg:px-[15rem] bg-white py-5 drop-shadow-xl
+
+    ]">
+        <span class="nav_logo">
+            logo
+        </span>
+
+        <!-- 
+            1.	Home*
+2.	Skill*
+3.	Travel page : countries (greece, Italy, Thailand, korea) 
+4.	Photography:
+5.	Gallery (food): name, kind, ingredients
+
+         -->
+
+        <ul class="[ nav_links ] [ flex justify-between gap-4 ]">
+            <li class="nav_link"><a href="index.html">Home</a></li>
+            <li class="nav_link"><a href="skills.html">Skills</a></li>
+            <li class="nav_link"><a href="travel.html">Travel</a></li>
+            <li class="nav_link"><a href="food.html">Food Gallery</a></li>
+            <li class="nav_link"><a href="events.html">Events</a></li>
+        </ul>
+
+        <span class="nav_action">
+            <button>Contact Me</button>
+        </span>
+    </nav>
+
+    <!-- banner -->
+
+    <section class="events [ flex flex-col ]  [ sm:px-[3rem] lg:px-[15rem]  bg-green-200 p-5 mt-5 ]">
+
+        <h2>Events</h2>
+
+        <div class="events__columns flex  justify-between gap-5">
+
+            <div class="event__column [ flex-col ] w-1/3 ">
+                <span class="event__title">
+                    
+                </span>
+
+                <div class="event__image_container">
+                    <img src="https://blog.continentalcurrency.ca/wp-content/uploads/2015/02/greek_town.jpg" alt="" srcset="">
+                </div>
+
+                <figcaption class="[ flex flex-col ]">
+                    <span>Greece</span>
+                    <span>Santorini</span>
+                </figcaption>
+            </div>
+
+            <div class="event__column [ flex-col ] w-1/3">
+                <span class="event__title">
+                    
+                </span>
+
+                <div class="event__image_container">
+                    <img src="https://www.jetstar.com/_/media/destinations/images/thailand/phuket/gallery/shutterstock-197709350.jpg?rev=cd9ee4458e004e58b0c13702a3b422db&w=160&rc=1&cw=160&ch=96&cx=2&cy=0&hash=F842C026C8E539E516F06A644878EEE15158A952%20160w,/_/media/destinations/images/thailand/phuket/gallery/shutterstock-197709350.jpg?rev=cd9ee4458e004e58b0c13702a3b422db&w=200&rc=1&cw=200&ch=120&cx=2&cy=0&hash=F01D146727867AFDEAEF50F9F21D755606A01A10%20200w,/_/media/destinations/images/thailand/phuket/gallery/shutterstock-197709350.jpg?rev=cd9ee4458e004e58b0c13702a3b422db&w=240&rc=1&cw=240&ch=144&cx=3&cy=0&hash=D378A45CF0E554B77EB1D91337764BF24676E676%20240w,/_/media/destinations/images/thailand/phuket/gallery/shutterstock-197709350.jpg?rev=cd9ee4458e004e58b0c13702a3b422db&w=280&rc=1&cw=280&ch=166&cx=4&cy=0&hash=E9061103850159FC5E0DD744E8AD3C7AB03E1792%20280w" alt="" srcset="">
+                </div>
+
+                <figcaption class="[ flex flex-col ]">
+                    <span>Thailand </span>
+                    <span></span>
+                </figcaption>
+            </div>
+
+            <div class="event__column [ flex-col ] w-1/3">
+                <span class="event__title">
+                    
+                </span>
+
+                <div class="event__image_container">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.mlSSQinb_wP3lJfjXjgWTQHaE7&pid=Api&P=0" alt="" srcset="">
+                </div>
+
+                <figcaption class="[ flex flex-col ]">
+                    <span>Korea</span>
+                    <span>Jeju Island</span>
+                </figcaption>
+            </div>
+
+        </div>
+    </section>
+
+   
+
+    <script src="script.js" defer></script>
+
+    <!-- footer -->
+
+</body>
+
+</html>
